@@ -56,4 +56,17 @@ dependencies {
     androidTestImplementation(libs.androidx.ui.test.junit4)
     debugImplementation(libs.androidx.ui.tooling)
     debugImplementation(libs.androidx.ui.test.manifest)
+    implementation(libs.lifecycle.viewmodel.compose)
+    implementation(libs.lifecycle.runtime.compose)
+    // Koin Core features
+    implementation(libs.koin.core)
+    // Koin Android features
+    implementation(libs.koin.android)
+    // Koin Android Compose features
+    implementation(libs.koin.androidx.compose)
+
+    // Optional: Koin for Unit tests
+    testImplementation(libs.koin.test)
+    testImplementation(libs.koin.test.junit4)
+
 }

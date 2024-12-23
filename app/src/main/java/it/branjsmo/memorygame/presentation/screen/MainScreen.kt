@@ -1,8 +1,7 @@
-package it.branjsmo.memorygame.presentation
+package it.branjsmo.memorygame.presentation.screen
 
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
-import it.branjsmo.memorygame.presentation.components.MemoryGame
 
 @Composable
 fun MainScreen(modifier: Modifier = Modifier){
