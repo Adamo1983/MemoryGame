@@ -5,7 +5,7 @@ import androidx.compose.material3.AlertDialog
 import androidx.compose.material3.Button
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
-import it.branjsmo.memorygame.presentation.screen.MemoryGameState
+import it.branjsmo.memorygame.presentation.screen.game.MemoryGameState
 
 @Composable
  fun GameOverDialog(

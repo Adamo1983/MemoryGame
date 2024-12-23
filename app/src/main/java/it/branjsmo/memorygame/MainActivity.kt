@@ -10,8 +10,8 @@ import androidx.compose.material3.Scaffold
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
-import it.branjsmo.memorygame.presentation.screen.MainScreen
-import it.branjsmo.memorygame.presentation.screen.MemoryGameScreen
+import it.branjsmo.memorygame.navigation.GameNavigation
+import it.branjsmo.memorygame.presentation.screen.game.MemoryGameScreen
 import it.branjsmo.memorygame.presentation.theme.MemoryGameTheme
 
 class MainActivity : ComponentActivity() {
@@ -21,8 +21,7 @@ class MainActivity : ComponentActivity() {
         setContent {
             MemoryGameTheme {
                 Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
-                    //MainScreen(modifier = Modifier.padding(innerPadding))
-                    MemoryGameScreen(modifier = Modifier.padding(innerPadding))
+                    GameNavigation(modifier = Modifier.padding(innerPadding))
                 }
             }
         }

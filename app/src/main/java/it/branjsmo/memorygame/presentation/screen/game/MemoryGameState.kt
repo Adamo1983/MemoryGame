@@ -1,4 +1,4 @@
-package it.branjsmo.memorygame.presentation.screen
+package it.branjsmo.memorygame.presentation.screen.game
 
 import it.branjsmo.memorygame.presentation.model.CardState
 import it.branjsmo.memorygame.presentation.model.Player

@@ -1,4 +1,4 @@
-package it.branjsmo.memorygame.presentation.screen
+package it.branjsmo.memorygame.presentation.screen.game
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope

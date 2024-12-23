@@ -1,4 +1,4 @@
-package it.branjsmo.memorygame.presentation.screen
+package it.branjsmo.memorygame.presentation.screen.game
 
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Spacer

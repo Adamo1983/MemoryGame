@@ -8,7 +8,7 @@ import androidx.compose.foundation.lazy.grid.items
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
-import it.branjsmo.memorygame.presentation.screen.MemoryGameState
+import it.branjsmo.memorygame.presentation.screen.game.MemoryGameState
 
 @Composable
 fun GameGrid(
