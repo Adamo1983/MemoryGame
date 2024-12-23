@@ -160,6 +160,9 @@ class MemoryGameViewModel : ViewModel(){
         val numberOfPlayers = _uiState.value.players.size
         val numberOfPairs = _uiState.value.cardStates.size / 2
         initializeGame(numberOfPairs, numberOfPlayers, _uiState.value.showInitialCards)
+        _uiState.update { it ->
+            it.copy(isGameOver = false)
+        }
     }
 
 }

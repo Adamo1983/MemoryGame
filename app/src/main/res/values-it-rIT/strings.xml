@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Gioco del Memory</string>
+
+    <!-- Game Setup Screen -->
+    <string name="setup_title">Configurazione Gioco</string>
+    <string name="pairs_label">Numero di Coppie: %1$d</string>
+    <string name="players_label">Numero di Giocatori: %1$d</string>
+    <string name="show_initial_cards">Mostra Carte Iniziali</string>
+    <string name="start_game">Inizia Gioco</string>
+
+    <!-- Game Screen -->
+    <string name="current_player">Giocatore Attuale: %1$s</string>
+    <string name="score_label">Punteggio: %1$d</string>
+    <string name="game_over">Gioco Terminato!</string>
+    <string name="winner_message">Il Giocatore %1$s ha vinto!</string>
+    <string name="tie_message">Pareggio!</string>
+    <string name="new_game">Nuova Partita</string>
+    <string name="finish_game_with_moves">Hai finito il gioco con %1$d mosse!</string>
+    <string name="player_with_points">%1$s : %2$d punti!</string>
+    <string name="score">Punti: %1$d</string>
+    <string name="moves">Mosse: %1$d</string>
+</resources>

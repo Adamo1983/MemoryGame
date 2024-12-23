@@ -18,7 +18,9 @@ import androidx.compose.runtime.remember
 import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.unit.dp
+import it.branjsmo.memorygame.R
 
 @Composable
 fun GameSetupScreen(
@@ -37,13 +39,13 @@ fun GameSetupScreen(
         verticalArrangement = Arrangement.Center
     ) {
         Text(
-            text = "Game Setup",
+            text = stringResource(R.string.setup_title),
             style = MaterialTheme.typography.headlineMedium,
             modifier = Modifier.padding(bottom = 32.dp)
         )
 
         // Number of Pairs Slider
-        Text(text = "Number of Pairs: $numberOfPairs")
+        Text(text = stringResource(R.string.pairs_label, numberOfPairs))
         Slider(
             value = numberOfPairs.toFloat(),
             onValueChange = { numberOfPairs = it.toInt() },
@@ -53,7 +55,7 @@ fun GameSetupScreen(
         )
 
         // Number of Players Slider
-        Text(text = "Number of Players: $numberOfPlayers")
+        Text(text = stringResource(R.string.players_label, numberOfPlayers))
         Slider(
             value = numberOfPlayers.toFloat(),
             onValueChange = { numberOfPlayers = it.toInt() },
@@ -67,7 +69,7 @@ fun GameSetupScreen(
             verticalAlignment = Alignment.CenterVertically,
             modifier = Modifier.padding(vertical = 8.dp)
         ) {
-            Text(text = "Show Initial Cards")
+            Text(text = stringResource(R.string.show_initial_cards))
             Switch(
                 checked = showInitialCards,
                 onCheckedChange = { showInitialCards = it },
@@ -79,7 +81,7 @@ fun GameSetupScreen(
             onClick = { onStartGame(numberOfPairs, numberOfPlayers, showInitialCards) },
             modifier = Modifier.padding(top = 32.dp)
         ) {
-            Text("Start Game")
+            Text(stringResource(R.string.start_game))
         }
     }
 }

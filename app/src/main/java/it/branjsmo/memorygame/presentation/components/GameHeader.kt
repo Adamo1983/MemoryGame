@@ -9,7 +9,9 @@ import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.font.FontWeight
+import it.branjsmo.memorygame.R
 import it.branjsmo.memorygame.presentation.screen.game.MemoryGameState
 
 
@@ -20,14 +22,15 @@ fun GameHeader(gameState: MemoryGameState) {
         horizontalArrangement = Arrangement.SpaceBetween
     ) {
         if (gameState.players.size == 1) {
-            Text("Mosse: ${gameState.movesCount}",
+            Text(
+                stringResource(R.string.moves, gameState.movesCount),
                 style = MaterialTheme.typography.headlineSmall)
         } else {
             gameState.players.forEachIndexed { index, player ->
                 Column(horizontalAlignment = Alignment.CenterHorizontally) {
                     Text(player.name)
                     Text(
-                        "Punti: ${player.score}",
+                        stringResource(R.string.score, player.score),
                         fontWeight = if (index == gameState.currentPlayerIndex)
                             FontWeight.Bold else FontWeight.Normal
                     )
